@@ -1,23 +1,61 @@
-# blackjack
+# Blackjack Game in Python
 
-'''
-Blackjack - Game requirements
-1.  The possible card values range from 1 to 10 and,
-unlike a real deck, the probability of drawing a card is equal
-2. The game begins by dealing two visible cards to the player, and two cards to the dealer.
-However, in the case of the dealer, one card is visible to other player while the other is hidden.
-3.  The player decides whether to "hit" (draw another card), or "stand" which ends their turn.
-4.  The player may hit any number of times. Should the total of the cards exceed 21,
-the player "busts" and loses the game to the dealer. The round then ends and
-the dealer does not have to draw/show any additional cards.
-5.  If the player reaches 21, the player stands
-6.  The dealer's turn begins by revealing the hidden card
-7.  The dealer must continue to hit if the total is 16 or less,
-and must stand if the value is 17 or more
-8.  The dealer busts if their total is over 21 and the player wins.
-9.  The dealer wins all ties (i.e. if both the dealer and the player reach 21, the dealer wins)
-10. The program indicates who the winner is and asks to play again
-11. It is up to you as the developer on how you will choose to handle invalid
-user input, but note the program cannot crash upon invalid input.
-Options can involve asking the user again or exiting the program with a user-friendly message.
-'''
+## Project Overview
+This Python application implements a simplified version of the Blackjack card game. The game features a straightforward interface for a single player to play against a dealer, with the ability to "hit" or "stand" based on standard Blackjack rules.
+
+### Game Rules
+- **Card Values**: The possible card values range from 1 to 10, with equal probability for each card.
+- **Dealing Cards**: The game begins by dealing two visible cards to the player and two cards to the dealer. One dealer card is visible to the player, while the other is hidden.
+- **Player Actions**: The player can choose to "hit" (draw another card) or "stand" (end their turn). The player may hit as many times as desired, but if the total card value exceeds 21, the player "busts" and loses the game.
+- **Dealer Actions**: The dealer reveals their hidden card and must continue to hit if the total card value is 16 or less. The dealer stands if the total is 17 or more. The dealer busts if their total exceeds 21, resulting in a win for the player.
+- **Winning and Ties**: If both the dealer and player reach 21, the dealer wins. The program indicates the winner and offers the option to play again.
+
+### Key Features
+- **Interactive Game Play**: Allows the player to choose between hitting or standing, with appropriate prompts and instructions.
+- **Dealer Logic**: Implements dealer behavior according to Blackjack rules, including handling of the dealer's hidden card.
+- **Game Outcome**: Determines and displays the game result (win, lose, or tie) and prompts the user to play again.
+- **Input Handling**: Manages invalid user input gracefully without crashing the program.
+
+## How to Set Up and Run the Game
+1. **Clone the Repository**  
+   Clone the repository from GitHub to your local machine:
+    ```bash
+    git clone https://github.com/akin11235/blackjack.git
+    ```
+
+2. **Navigate to the Project Directory**  
+   Change your working directory to the project directory:
+    ```bash
+    cd Blackjack
+    ```
+
+3. **Run the Game**  
+   Execute the Python script to start the game:
+    ```bash
+    python blackjack.py
+    ```
+
+4. **Play the Game**  
+   Follow the prompts to play the game. You will be asked to hit or stand, and the game will continue based on your choices.
+
+5. **Restart or Exit**  
+   After each round, the game will indicate the winner and prompt you to play again or exit.
+
+6. **Change Git Remote URL**  
+    To avoid accidental pushes to the base project, change the Git remote URL:
+    ```bash
+    git remote set-url origin https://github.com/yourusername/Blackjack.git
+    git remote -v # confirm the changes
+    ```
+
+7. **Clean Up**  
+   To clean up any unnecessary files or directories, you can remove temporary files or caches:
+    ```bash
+    rm -rf __pycache__
+    ```
+
+## Additional Information
+- **Python Documentation**: [Python Documentation](https://docs.python.org/3/)
+- **Blackjack Rules**: [Blackjack Rules](https://www.blackjack.org/rules/)
+
+---
